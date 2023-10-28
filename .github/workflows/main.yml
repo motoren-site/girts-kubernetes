@@ -45,7 +45,7 @@ jobs:
           docker push registry.digitalocean.com/containers/gist-kub-workshop:1.0
 
       - name: Set up Kubernetes cluster access
-        uses: matootie/dokube@1.3.4
+        uses: matootie/dokube@1.4.0
         with:
           personalAccessToken: ${{ secrets.DIGITAL_OCEAN_TOKEN }}
           clusterName: k8s-bergen
