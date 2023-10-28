@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: gist-deployment
   labels:
-    app: nginx
+    app: gist-deployment
 spec:
   replicas: 3
   selector:

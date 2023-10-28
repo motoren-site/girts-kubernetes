@@ -51,4 +51,9 @@ jobs:
           clusterName: k8s-bergen
 
       - name: Deploy to Kubernetes on DigitalOcean
-        run: kubectl set image deployment.yml app=gist-kub-workshop:1.0
+        run: kubectl apply -f deployment.yml -n apps
+
+      - name: Verify deploy
+        run: kubectl rollout status deployment/gist-deployment -n apps
+        timeout-minutes: 1
+        continue-on-error: true
