@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: gist-deployment
-          image: gist-kub-workshop:1.0
+          image: registry.digitalocean.com/containers/gist-kub-workshop:1.0
           ports:
             - containerPort: 8080
