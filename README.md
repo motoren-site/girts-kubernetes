@@ -1,2 +1,2 @@
-# girts-kubernetes
-Kubernetes workshop
+# Kubernetes workshop
+Sandbox for Kubernetes workshop at Miles FagCamp 2023.
