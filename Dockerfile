@@ -7,4 +7,5 @@ COPY ./target/*.jar /app/app.jar
 
 FROM eclipse-temurin:17-jre as run
 WORKDIR  /app
+COPY --from=build-stage /app/app.jar /app
 ENTRYPOINT ["java","-jar","app.jar"]
